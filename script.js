@@ -1,3 +1,6 @@
+
+
+  
 var name = "notValid";
 
 while (
@@ -61,9 +64,10 @@ while (
   && name !== "WISCONSIN"
   && name !== "WYOMING"
   && name !== "MEXICO"
-){
+  )
+  {
   var name = window.prompt("Enter your region in all capital letters with no spaces (i.e. NEWYORK: ");
-}
+  }
 
 var regionChosen = null; 
 
@@ -312,21 +316,20 @@ while (yes === false){
   var input = window.prompt("Now enter your household's monthly electricity usage in kWh");
 
   var convertToInt = Math.floor(parseInt(input));
-  yes = Number.isInteger(convertToInt);
+    yes = Number.isInteger(convertToInt);
 }
 
 if (convertToInt < regionChosen){
-  alert("you are below the average for Ontario, congratulations!");
-  }
-  
+    alert("you are below the average for Ontario, congratulations!");
+    }
+    
   else if(convertToInt === regionChosen){  
-    alert("you are at the average");
-  }
-
-    else{
-      alert("yikes")
+      alert("you are at the average");
     }
 
+    else{
+        alert("yikes")
+      }
 
 
 
