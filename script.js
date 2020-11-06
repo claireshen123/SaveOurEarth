@@ -319,16 +319,16 @@ while (yes === false){
 }
 
 if (convertToInt < regionChosen){
-    alert("you are below the average for Ontario, congratulations!");
-    }
+  alert("You are below the average for " + name + " congratulations! (The average for " + name + " is " + regionChosen + " kWh)");
+}
     
   else if(convertToInt === regionChosen){  
-      alert("you are at the average");
-    }
+    alert("Wow! You are exactly at the average for " + name + " (The average for " + name + " is " + regionChosen + " kWh)");
+  }
 
     else{
-        alert("yikes")
-      }
+      alert("You are above the average for " + name + ". (The average for " + name + " is " + regionChosen + " kWh). Here are 3 tips to reduce your energy usage:" + "\n" + "1. Unplug electronics when not in use" + "\n" + "2. Take shorter showers" + "\n" + "3. Hand dry your laundry" );
+    }
 
 
 
