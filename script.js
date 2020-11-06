@@ -1,7 +1,8 @@
 
-  
+//Variable that makes the while loop run at least once
 var name = "notValid";
 
+//While loop that will be used until the user enters a valid input
 while (
   name !== "ONTARIO" 
   && name !== "MANITOBA"
@@ -68,6 +69,7 @@ while (
   var name = window.prompt("Enter your region in all capital letters with no spaces (i.e. NEWYORK: ");
   }
 
+//If statements that set the regionChosen to the region that the user entered
 var regionChosen = null; 
 
 if (name === 'ONTARIO'){
@@ -310,6 +312,8 @@ if (name === "MEXICO"){
   regionChosen = 2028;
 };
 
+//This variable allows the loop to run at least once
+
 var yes = false;
 while (yes === false){
   var input = window.prompt("Now enter your household's monthly electricity usage in kWh");
@@ -317,6 +321,8 @@ while (yes === false){
   var convertToInt = Math.floor(parseInt(input));
     yes = Number.isInteger(convertToInt);
 }
+
+//Conditionals to display how the user compares to the average in their region
 
 if (convertToInt < regionChosen){
   alert("You are below the average for " + name + " congratulations! (The average for " + name + " is " + regionChosen + " kWh)");
