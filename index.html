@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title> Save Our Earth </title>
@@ -17,145 +17,144 @@
   </style>
 
   <style type="text/css"> 
-  .map { position:absolute; top: 0px; left: 0px; width:1500px; z-index: 1; } 
+    .map { position:absolute; top: 0px; left: 0px; width:1500px; z-index: 1; } 
 
-  .quebec{ position:absolute; top: 450px; left: 1070px; width:30px; z-index: 2; } 
+    .quebec{ position:absolute; top: 450px; left: 1070px; width:30px; z-index: 2; } 
 
-  .ontario { position:absolute; top: 430px; left: 880px; width:30px; z-index: 2; } 
+    .ontario { position:absolute; top: 430px; left: 880px; width:30px; z-index: 2; } 
 
-  .manitoba { position:absolute; top: 420px; left: 760px; width:30px; z-index: 2; } 
+    .manitoba { position:absolute; top: 420px; left: 760px; width:30px; z-index: 2; } 
 
-  .saskatchewan{ position:absolute; top: 430px; left: 670px; width:30px; z-index: 2; } 
+    .saskatchewan{ position:absolute; top: 430px; left: 670px; width:30px; z-index: 2; } 
 
-  .alberta{ position:absolute; top: 400px; left: 570px; width:30px; z-index: 2; } 
+    .alberta{ position:absolute; top: 400px; left: 570px; width:30px; z-index: 2; } 
 
-  .britishColumbia{ position:absolute; top: 400px; left: 450px; width:30px; z-index: 2; } 
+    .britishColumbia{ position:absolute; top: 400px; left: 450px; width:30px; z-index: 2; } 
 
-  .novaScotia{ position:absolute; top: 555px; left: 1205px; width:25px; z-index: 2; } 
+    .novaScotia{ position:absolute; top: 555px; left: 1205px; width:25px; z-index: 2; } 
 
-  .newfoundlandAndLabrador{ position:absolute; top: 490px; left: 1270px; width:25px; z-index: 2; }
+    .newfoundlandAndLabrador{ position:absolute; top: 490px; left: 1270px; width:25px; z-index: 2; }
 
-  .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
+    .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
 
-  .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
+    .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
 
- .maine{ position:absolute; top: 550px; left: 1130px; width:22px; z-index: 2; } 
+    .maine{ position:absolute; top: 550px; left: 1130px; width:22px; z-index: 2; } 
 
- .vermont{ position:absolute; top: 600px; left: 1170px; width:22px; z-index: 2; } 
+    .vermont{ position:absolute; top: 600px; left: 1170px; width:22px; z-index: 2; } 
 
- .newHampshire{ position:absolute; top: 625px; left: 1170px; width:22px; z-index: 2; } 
+    .newHampshire{ position:absolute; top: 625px; left: 1170px; width:22px; z-index: 2; } 
 
- .massachusetts{ position:absolute; top: 650px; left: 1170px; width:22px; z-index: 2; } 
+    .massachusetts{ position:absolute; top: 650px; left: 1170px; width:22px; z-index: 2; } 
 
- .rhodeIsland{ position:absolute; top: 675px; left: 1170px; width:22px; z-index: 2; } 
+    .rhodeIsland{ position:absolute; top: 675px; left: 1170px; width:22px; z-index: 2; } 
 
- .conneticut{ position:absolute; top: 700px; left: 1170px; width:22px; z-index: 2; } 
+    .conneticut{ position:absolute; top: 700px; left: 1170px; width:22px; z-index: 2; } 
 
- .newJersey{ position:absolute; top: 725px; left: 1170px; width:22px; z-index: 2; } 
+    .newJersey{ position:absolute; top: 725px; left: 1170px; width:22px; z-index: 2; } 
 
-  .delaware{ position:absolute; top: 750px; left: 1170px; width:22px; z-index: 2; } 
+    .delaware{ position:absolute; top: 750px; left: 1170px; width:22px; z-index: 2; } 
 
- .maryland{ position:absolute; top: 775px; left: 1170px; width:22px; z-index: 2; } 
+    .maryland{ position:absolute; top: 775px; left: 1170px; width:22px; z-index: 2; } 
 
- .newYork{ position:absolute; top: 590px; left: 1060px; width:22px; z-index: 2; } 
+    .newYork{ position:absolute; top: 590px; left: 1060px; width:22px; z-index: 2; } 
 
- .pennsylvania{ position:absolute; top: 630px; left: 1025px; width:22px; z-index: 2; } 
+    .pennsylvania{ position:absolute; top: 630px; left: 1025px; width:22px; z-index: 2; } 
 
- .westVirginia{ position:absolute; top: 670px; left: 988px; width:22px; z-index: 2; } 
+    .westVirginia{ position:absolute; top: 670px; left: 988px; width:22px; z-index: 2; } 
 
- .virginia{ position:absolute; top: 690px; left: 1020px; width:22px; z-index: 2; } 
+    .virginia{ position:absolute; top: 690px; left: 1020px; width:22px; z-index: 2; } 
 
- .northCarolina{ position:absolute; top: 727px; left: 1025px; width:22px; z-index: 2; } 
+    .northCarolina{ position:absolute; top: 727px; left: 1025px; width:22px; z-index: 2; } 
 
-  .southCarolina{ position:absolute; top: 760px; left: 995px; width:22px; z-index: 2; } 
+    .southCarolina{ position:absolute; top: 760px; left: 995px; width:22px; z-index: 2; } 
 
-  .georgia{ position:absolute; top: 785px; left: 960px; width:22px; z-index: 2; } 
+    .georgia{ position:absolute; top: 785px; left: 960px; width:22px; z-index: 2; } 
 
-  .florida{ position:absolute; top: 860px; left: 983px; width:22px; z-index: 2; } 
+    .florida{ position:absolute; top: 860px; left: 983px; width:22px; z-index: 2; } 
 
-  .alabama {position:absolute; top: 780px; left: 910px; width:22px; z-index: 2; } 
+    .alabama {position:absolute; top: 780px; left: 910px; width:22px; z-index: 2; } 
 
-  .mississippi{ position:absolute; top: 760px; left: 865px; width:22px; z-index: 2; } 
+    .mississippi{ position:absolute; top: 760px; left: 865px; width:22px; z-index: 2; } 
 
-  .louisiana{ position:absolute; top: 800px; left: 820px; width:22px; z-index: 2; } 
+    .louisiana{ position:absolute; top: 800px; left: 820px; width:22px; z-index: 2; } 
 
-  .arkansas{ position:absolute; top: 740px; left: 830px; width:22px; z-index: 2; } 
+    .arkansas{ position:absolute; top: 740px; left: 830px; width:22px; z-index: 2; } 
 
-  .tennesse{ position:absolute; top: 721px; left: 920px; width:22px; z-index: 2; } 
+    .tennesse{ position:absolute; top: 721px; left: 920px; width:22px; z-index: 2; } 
 
-  .kentucky{ position:absolute; top: 690px; left: 940px; width:22px; z-index: 2; } 
+    .kentucky{ position:absolute; top: 690px; left: 940px; width:22px; z-index: 2; } 
 
-  .ohio{ position:absolute; top: 645px; left: 960px; width:22px; z-index: 2; } 
+    .ohio{ position:absolute; top: 645px; left: 960px; width:22px; z-index: 2; } 
 
-  .indiana{ position:absolute; top: 645px; left: 912px; width:22px; z-index: 2; } 
+    .indiana{ position:absolute; top: 645px; left: 912px; width:22px; z-index: 2; } 
 
-  .michigan{ position:absolute; top: 590px; left: 928px; width:22px; z-index: 2; } 
+    .michigan{ position:absolute; top: 590px; left: 928px; width:22px; z-index: 2; } 
 
-  .wisconsin{ position:absolute; top: 570px; left: 860px; width:22px; z-index: 2; } 
+    .wisconsin{ position:absolute; top: 570px; left: 860px; width:22px; z-index: 2; } 
 
-  .minnesota{ position:absolute; top: 540px; left: 800px; width:22px; z-index: 2; } 
+    .minnesota{ position:absolute; top: 540px; left: 800px; width:22px; z-index: 2; } 
 
-  .northDakota{ position:absolute; top: 520px; left: 730px; width:22px; z-index: 2; } 
+    .northDakota{ position:absolute; top: 520px; left: 730px; width:22px; z-index: 2; } 
 
-  .montana{ position:absolute; top: 515px; left: 620px; width:22px; z-index: 2; } 
+    .montana{ position:absolute; top: 515px; left: 620px; width:22px; z-index: 2; } 
 
-  .washington{ position:absolute; top: 510px; left: 480px; width:22px; z-index: 2; } 
+    .washington{ position:absolute; top: 510px; left: 480px; width:22px; z-index: 2; } 
 
-  .oregon{ position:absolute; top: 580px; left: 460px; width:22px; z-index: 2; } 
+    .oregon{ position:absolute; top: 580px; left: 460px; width:22px; z-index: 2; } 
 
-  .california{ position:absolute; top: 720px; left: 455px; width:22px; z-index: 2; } 
+    .california{ position:absolute; top: 720px; left: 455px; width:22px; z-index: 2; } 
 
-  .nevada{ position:absolute; top: 650px; left: 490px; width:22px; z-index: 2; } 
+    .nevada{ position:absolute; top: 650px; left: 490px; width:22px; z-index: 2; } 
 
-  .idaho{ position:absolute; top: 580px; left: 540px; width:22px; z-index: 2; } 
+    .idaho{ position:absolute; top: 580px; left: 540px; width:22px; z-index: 2; } 
 
-  .wyoming{ position:absolute; top: 590px; left: 630px; width:22px; z-index: 2; } 
+    .wyoming{ position:absolute; top: 590px; left: 630px; width:22px; z-index: 2; } 
 
-  .southDakota{ position:absolute; top: 565px; left: 725px; width:22px; z-index: 2; } 
+    .southDakota{ position:absolute; top: 565px; left: 725px; width:22px; z-index: 2; } 
 
-  .iowa{ position:absolute; top: 610px; left: 810px; width:22px; z-index: 2; } 
+    .iowa{ position:absolute; top: 610px; left: 810px; width:22px; z-index: 2; } 
 
-  .illinois{ position:absolute; top: 640px; left: 870px; width:22px; z-index: 2; } 
+    .illinois{ position:absolute; top: 640px; left: 870px; width:22px; z-index: 2; } 
 
-  .missouri{ position:absolute; top: 680px; left: 825px; width:22px; z-index: 2; }
+    .missouri{ position:absolute; top: 680px; left: 825px; width:22px; z-index: 2; }
 
-  .kansas{ position:absolute; top: 670px; left: 745px; width:22px; z-index: 2; } 
+    .kansas{ position:absolute; top: 670px; left: 745px; width:22px; z-index: 2; } 
 
-  .nebraska{ position:absolute; top: 620px; left: 735px; width:22px; z-index: 2; }  
+    .nebraska{ position:absolute; top: 620px; left: 735px; width:22px; z-index: 2; }  
 
-  .colorado{ position:absolute; top: 665px; left: 645px; width:22px; z-index: 2; }
+    .colorado{ position:absolute; top: 665px; left: 645px; width:22px; z-index: 2; }
 
-  .utah{ position:absolute; top: 660px; left: 560px; width:22px; z-index: 2; }  
+    .utah{ position:absolute; top: 660px; left: 560px; width:22px; z-index: 2; }  
 
-  .arizona{ position:absolute; top: 750px; left: 550px; width:22px; z-index: 2; }  
+    .arizona{ position:absolute; top: 750px; left: 550px; width:22px; z-index: 2; }  
 
-  .newMexico{ position:absolute; top: 750px; left: 630px; width:22px; z-index: 2; } 
+    .newMexico{ position:absolute; top: 750px; left: 630px; width:22px; z-index: 2; } 
 
-  .oklahoma{ position:absolute; top: 730px; left: 755px; width:22px; z-index: 2; } 
+    .oklahoma{ position:absolute; top: 730px; left: 755px; width:22px; z-index: 2; } 
 
-  .texas{ position:absolute; top: 810px; left: 730px; width:22px; z-index: 2; } 
+    .texas{ position:absolute; top: 810px; left: 730px; width:22px; z-index: 2; } 
 
-  .hawaii{ position:absolute; top: 750px; left: 140px; width:22px; z-index: 2; } 
+    .hawaii{ position:absolute; top: 750px; left: 140px; width:22px; z-index: 2; } 
 
-  .alaska{ position:absolute; top: 230px; left: 290px; width:22px; z-index: 2; }
+    .alaska{ position:absolute; top: 230px; left: 290px; width:22px; z-index: 2; }
 
-  .finanzasSaltilloCoahuila{ position:absolute; top: 870px; left: 685px; width:22px; z-index: 2; }
+    .finanzasSaltilloCoahuila{ position:absolute; top: 870px; left: 685px; width:22px; z-index: 2; }
 
-  .metepecToluca{ position:absolute; top: 1040px; left: 700px; width:22px; z-index: 2; }
+    .metepecToluca{ position:absolute; top: 1040px; left: 700px; width:22px; z-index: 2; }
 
-  .tolucaCentroToluca{ position:absolute; top: 1040px; left: 725px; width:22px; z-index: 2; }
+    .tolucaCentroToluca{ position:absolute; top: 1040px; left: 725px; width:22px; z-index: 2; }
 
-  .sanCristobalHuichotitlanToluca{ position:absolute; top: 1060px; left: 714px; width:22px; z-index: 2; }
+    .sanCristobalHuichotitlanToluca{ position:absolute; top: 1060px; left: 714px; width:22px; z-index: 2; }
 
-  .pedregalMexico{ position:absolute; top: 1020px; left: 675px; width:22px; z-index: 2; }
+    .pedregalMexico{ position:absolute; top: 1020px; left: 675px; width:22px; z-index: 2; }
 
-  .benitoJuarezMexico{ position:absolute; top: 1065px; left: 750px; width:22px; z-index: 2; }
+    .benitoJuarezMexico{ position:absolute; top: 1065px; left: 750px; width:22px; z-index: 2; }
 
-  .mercedMexico{ position:absolute; top: 1020px; left: 705px; width:22px; z-index: 2; }
+    .mercedMexico{ position:absolute; top: 1020px; left: 705px; width:22px; z-index: 2; }
 
-  .apodacaNuevoLeon{ position:absolute; top: 900px; left: 705px; width:22px; z-index: 2; }
-
-</style>
+    .apodacaNuevoLeon{ position:absolute; top: 900px; left: 705px; width:22px; z-index: 2; }  
+  </style>
 
   <body>
     <nav>
@@ -167,9 +166,9 @@
    
   </body>
 
-</head>
+  </head>
 
-<div class="myDiv" style="text-align: center;">
+  <div class="myDiv" style="text-align: center;">
 	&nbsp;
 	<h1 style="font-family:verdana"> Save Our Earth </h1>
 	<p><strong>Coded By: Claire Shen<stron></p>
@@ -179,27 +178,27 @@
   </div>  
  
   <div class = "myDiv2">
-  &ensp; 
-  <h2 style="text-align: center" "font-family:cambria"  >What is the Purpose Of This Website?</h2>
-  <h5 / style = "font-family:calibri">The purpose of this website is to give users an insight on the harmful effects of pollution and provide real-time data of air quality index and electricity usage across North America. Users will also be able to compare their electriicty usage to the average in their area.</h5>
-  <h2 style="text-align: center" "font-family:cambria"  >What is Pollution?</h2>
+    &ensp; 
+    <h2 style="text-align: center" "font-family:cambria"  >What is the Purpose Of This Website?</h2>
+    <h5 / style = "font-family:calibri">The purpose of this website is to give users an insight on the harmful effects of pollution and provide real-time data of air quality index and electricity usage across North America. Users will also be able to compare their electriicty usage to the average in their area.</h5>
+    <h2 style="text-align: center" "font-family:cambria"  >What is Pollution?</h2>
+  </div>
 
 
 
-    <div class="row">
-      <div class="column">
+  <div class="row">
+    <div class="column">
       <img src="https://media.wired.com/photos/5d1d41b78087e800091611c3/master/pass/Science_Pollution_1148072074.jpg" alt="Trash" style="width:100%">
-      </div>
+    </div>
     <div class="column">
       <img src="https://hhp-blog.s3.amazonaws.com/2020/07/GettyImages-1098018152.jpg" alt="Pollution" style="width:100%">
-    </div>
+      </div>
     <div class="column">
       <img src="https://www.clevelandclinic.org/healthinfo/ShowImage.ashx?PIC=4486" alt="Coughing" style="width:100%">
     </div>
   </div>
 
   <div>
-
     <h5 / style = "font-family:calibri"> - Pollution is the addition of any substance (in any state of matter) or any form of energy (head, sound, or radioactivity) to the environment at a rate faster than it can be dispersed, diluted, decomposed, recycled, or stored in some harmless form.  <br> - Pollution can be caused by natural events such as volcano eruptions; however nowadays in society the work “pollution” mostly refers to an anthropogenic source (created by human activity)</h5>
     <h2 style="text-align: center" "font-family:cambria" >The Harmful Effects of Pollution</h2>
     <h5 / style = "font-family:calibri"> - Boosts average global temperature
@@ -227,9 +226,7 @@
     &ensp; 
   </div>
 
-
   <div style= "position: relative; left: 0; top: 0;">
-
     <a href="https://ibb.co/jwcBsYV"><img class= "map" src="https://i.ibb.co/n1HZty3/Empty-Map.png" alt="Empty-Map" style="text-align: center;"> </a>
 
     <img class="ontario" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Red_Circle%28small%29.svg/600px-Red_Circle%28small%29.svg.png" 
