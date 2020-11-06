@@ -1,163 +1,173 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title> Save Our Earth </title>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<style>
-		.myDiv {
-			background-color: #87CEFA;
-		}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Save Our Earth </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      .myDiv {
+        background-color: #87CEFA;
+      }
 
-		.myDiv2 {
-			background-color: #98FB98;
-		}
-  </style>
+      .myDiv2 {
+        background-color: #98FB98;
+      }
 
-  <style type="text/css"> 
-  .map { position:absolute; top: 0px; left: 0px; width:1500px; z-index: 1; } 
+      .myDiv3 {
+        background-color: #7FFFD4;
+      }
 
-  .quebec{ position:absolute; top: 450px; left: 1070px; width:30px; z-index: 2; } 
+      .myDiv4 {
+        background-color: #E6E6FA;
+      }
 
-  .ontario { position:absolute; top: 430px; left: 880px; width:30px; z-index: 2; } 
 
-  .manitoba { position:absolute; top: 420px; left: 760px; width:30px; z-index: 2; } 
+    </style>
 
-  .saskatchewan{ position:absolute; top: 430px; left: 670px; width:30px; z-index: 2; } 
+    <style type="text/css"> 
+      .map { position:absolute; top: 0px; left: 0px; width:1500px; z-index: 1; } 
 
-  .alberta{ position:absolute; top: 400px; left: 570px; width:30px; z-index: 2; } 
+      .quebec{ position:absolute; top: 450px; left: 1070px; width:30px; z-index: 2; } 
 
-  .britishColumbia{ position:absolute; top: 400px; left: 450px; width:30px; z-index: 2; } 
+      .ontario { position:absolute; top: 430px; left: 880px; width:30px; z-index: 2; } 
 
-  .novaScotia{ position:absolute; top: 555px; left: 1205px; width:25px; z-index: 2; } 
+      .manitoba { position:absolute; top: 420px; left: 760px; width:30px; z-index: 2; } 
 
-  .newfoundlandAndLabrador{ position:absolute; top: 490px; left: 1270px; width:25px; z-index: 2; }
+      .saskatchewan{ position:absolute; top: 430px; left: 670px; width:30px; z-index: 2; } 
 
-  .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
+      .alberta{ position:absolute; top: 400px; left: 570px; width:30px; z-index: 2; } 
 
-  .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
+      .britishColumbia{ position:absolute; top: 400px; left: 450px; width:30px; z-index: 2; } 
 
- .maine{ position:absolute; top: 550px; left: 1130px; width:22px; z-index: 2; } 
+      .novaScotia{ position:absolute; top: 555px; left: 1205px; width:25px; z-index: 2; } 
 
- .vermont{ position:absolute; top: 600px; left: 1170px; width:22px; z-index: 2; } 
+      .newfoundlandAndLabrador{ position:absolute; top: 490px; left: 1270px; width:25px; z-index: 2; }
 
- .newHampshire{ position:absolute; top: 625px; left: 1170px; width:22px; z-index: 2; } 
+      .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
 
- .massachusetts{ position:absolute; top: 650px; left: 1170px; width:22px; z-index: 2; } 
+      .northWestTerritories{ position:absolute; top: 240px; left: 570px; width:30px; z-index: 2; } 
 
- .rhodeIsland{ position:absolute; top: 675px; left: 1170px; width:22px; z-index: 2; } 
+      .maine{ position:absolute; top: 550px; left: 1130px; width:22px; z-index: 2; } 
 
- .conneticut{ position:absolute; top: 700px; left: 1170px; width:22px; z-index: 2; } 
+      .vermont{ position:absolute; top: 600px; left: 1170px; width:22px; z-index: 2; } 
 
- .newJersey{ position:absolute; top: 725px; left: 1170px; width:22px; z-index: 2; } 
+      .newHampshire{ position:absolute; top: 625px; left: 1170px; width:22px; z-index: 2; } 
 
-  .delaware{ position:absolute; top: 750px; left: 1170px; width:22px; z-index: 2; } 
+      .massachusetts{ position:absolute; top: 650px; left: 1170px; width:22px; z-index: 2; } 
 
- .maryland{ position:absolute; top: 775px; left: 1170px; width:22px; z-index: 2; } 
+      .rhodeIsland{ position:absolute; top: 675px; left: 1170px; width:22px; z-index: 2; } 
 
- .newYork{ position:absolute; top: 590px; left: 1060px; width:22px; z-index: 2; } 
+      .conneticut{ position:absolute; top: 700px; left: 1170px; width:22px; z-index: 2; } 
 
- .pennsylvania{ position:absolute; top: 630px; left: 1025px; width:22px; z-index: 2; } 
+      .newJersey{ position:absolute; top: 725px; left: 1170px; width:22px; z-index: 2; } 
 
- .westVirginia{ position:absolute; top: 670px; left: 988px; width:22px; z-index: 2; } 
+      .delaware{ position:absolute; top: 750px; left: 1170px; width:22px; z-index: 2; } 
 
- .virginia{ position:absolute; top: 690px; left: 1020px; width:22px; z-index: 2; } 
+      .maryland{ position:absolute; top: 775px; left: 1170px; width:22px; z-index: 2; } 
 
- .northCarolina{ position:absolute; top: 727px; left: 1025px; width:22px; z-index: 2; } 
+      .newYork{ position:absolute; top: 590px; left: 1060px; width:22px; z-index: 2; } 
 
-  .southCarolina{ position:absolute; top: 760px; left: 995px; width:22px; z-index: 2; } 
+      .pennsylvania{ position:absolute; top: 630px; left: 1025px; width:22px; z-index: 2; } 
 
-  .georgia{ position:absolute; top: 785px; left: 960px; width:22px; z-index: 2; } 
+      .westVirginia{ position:absolute; top: 670px; left: 988px; width:22px; z-index: 2; } 
 
-  .florida{ position:absolute; top: 860px; left: 983px; width:22px; z-index: 2; } 
+      .virginia{ position:absolute; top: 690px; left: 1020px; width:22px; z-index: 2; } 
 
-  .alabama {position:absolute; top: 780px; left: 910px; width:22px; z-index: 2; } 
+      .northCarolina{ position:absolute; top: 727px; left: 1025px; width:22px; z-index: 2; } 
 
-  .mississippi{ position:absolute; top: 760px; left: 865px; width:22px; z-index: 2; } 
+      .southCarolina{ position:absolute; top: 760px; left: 995px; width:22px; z-index: 2; } 
 
-  .louisiana{ position:absolute; top: 800px; left: 820px; width:22px; z-index: 2; } 
+      .georgia{ position:absolute; top: 785px; left: 960px; width:22px; z-index: 2; } 
 
-  .arkansas{ position:absolute; top: 740px; left: 830px; width:22px; z-index: 2; } 
+      .florida{ position:absolute; top: 860px; left: 983px; width:22px; z-index: 2; } 
 
-  .tennesse{ position:absolute; top: 721px; left: 920px; width:22px; z-index: 2; } 
+      .alabama {position:absolute; top: 780px; left: 910px; width:22px; z-index: 2; } 
 
-  .kentucky{ position:absolute; top: 690px; left: 940px; width:22px; z-index: 2; } 
+      .mississippi{ position:absolute; top: 760px; left: 865px; width:22px; z-index: 2; } 
 
-  .ohio{ position:absolute; top: 645px; left: 960px; width:22px; z-index: 2; } 
+      .louisiana{ position:absolute; top: 800px; left: 820px; width:22px; z-index: 2; } 
 
-  .indiana{ position:absolute; top: 645px; left: 912px; width:22px; z-index: 2; } 
+      .arkansas{ position:absolute; top: 740px; left: 830px; width:22px; z-index: 2; } 
 
-  .michigan{ position:absolute; top: 590px; left: 928px; width:22px; z-index: 2; } 
+      .tennesse{ position:absolute; top: 721px; left: 920px; width:22px; z-index: 2; } 
 
-  .wisconsin{ position:absolute; top: 570px; left: 860px; width:22px; z-index: 2; } 
+      .kentucky{ position:absolute; top: 690px; left: 940px; width:22px; z-index: 2; } 
 
-  .minnesota{ position:absolute; top: 540px; left: 800px; width:22px; z-index: 2; } 
+      .ohio{ position:absolute; top: 645px; left: 960px; width:22px; z-index: 2; } 
 
-  .northDakota{ position:absolute; top: 520px; left: 730px; width:22px; z-index: 2; } 
+      .indiana{ position:absolute; top: 645px; left: 912px; width:22px; z-index: 2; } 
 
-  .montana{ position:absolute; top: 515px; left: 620px; width:22px; z-index: 2; } 
+      .michigan{ position:absolute; top: 590px; left: 928px; width:22px; z-index: 2; } 
 
-  .washington{ position:absolute; top: 510px; left: 480px; width:22px; z-index: 2; } 
+      .wisconsin{ position:absolute; top: 570px; left: 860px; width:22px; z-index: 2; } 
 
-  .oregon{ position:absolute; top: 580px; left: 460px; width:22px; z-index: 2; } 
+      .minnesota{ position:absolute; top: 540px; left: 800px; width:22px; z-index: 2; } 
 
-  .california{ position:absolute; top: 720px; left: 455px; width:22px; z-index: 2; } 
+      .northDakota{ position:absolute; top: 520px; left: 730px; width:22px; z-index: 2; } 
 
-  .nevada{ position:absolute; top: 650px; left: 490px; width:22px; z-index: 2; } 
+      .montana{ position:absolute; top: 515px; left: 620px; width:22px; z-index: 2; } 
 
-  .idaho{ position:absolute; top: 580px; left: 540px; width:22px; z-index: 2; } 
+      .washington{ position:absolute; top: 510px; left: 480px; width:22px; z-index: 2; } 
 
-  .wyoming{ position:absolute; top: 590px; left: 630px; width:22px; z-index: 2; } 
+      .oregon{ position:absolute; top: 580px; left: 460px; width:22px; z-index: 2; } 
 
-  .southDakota{ position:absolute; top: 565px; left: 725px; width:22px; z-index: 2; } 
+      .california{ position:absolute; top: 720px; left: 455px; width:22px; z-index: 2; } 
 
-  .iowa{ position:absolute; top: 610px; left: 810px; width:22px; z-index: 2; } 
+      .nevada{ position:absolute; top: 650px; left: 490px; width:22px; z-index: 2; } 
 
-  .illinois{ position:absolute; top: 640px; left: 870px; width:22px; z-index: 2; } 
+      .idaho{ position:absolute; top: 580px; left: 540px; width:22px; z-index: 2; } 
 
-  .missouri{ position:absolute; top: 680px; left: 825px; width:22px; z-index: 2; }
+      .wyoming{ position:absolute; top: 590px; left: 630px; width:22px; z-index: 2; } 
 
-  .kansas{ position:absolute; top: 670px; left: 745px; width:22px; z-index: 2; } 
+      .southDakota{ position:absolute; top: 565px; left: 725px; width:22px; z-index: 2; } 
 
-  .nebraska{ position:absolute; top: 620px; left: 735px; width:22px; z-index: 2; }  
+      .iowa{ position:absolute; top: 610px; left: 810px; width:22px; z-index: 2; } 
 
-  .colorado{ position:absolute; top: 665px; left: 645px; width:22px; z-index: 2; }
+      .illinois{ position:absolute; top: 640px; left: 870px; width:22px; z-index: 2; } 
 
-  .utah{ position:absolute; top: 660px; left: 560px; width:22px; z-index: 2; }  
+      .missouri{ position:absolute; top: 680px; left: 825px; width:22px; z-index: 2; }
 
-  .arizona{ position:absolute; top: 750px; left: 550px; width:22px; z-index: 2; }  
+      .kansas{ position:absolute; top: 670px; left: 745px; width:22px; z-index: 2; } 
 
-  .newMexico{ position:absolute; top: 750px; left: 630px; width:22px; z-index: 2; } 
+      .nebraska{ position:absolute; top: 620px; left: 735px; width:22px; z-index: 2; }  
 
-  .oklahoma{ position:absolute; top: 730px; left: 755px; width:22px; z-index: 2; } 
+      .colorado{ position:absolute; top: 665px; left: 645px; width:22px; z-index: 2; }
 
-  .texas{ position:absolute; top: 810px; left: 730px; width:22px; z-index: 2; } 
+      .utah{ position:absolute; top: 660px; left: 560px; width:22px; z-index: 2; }  
 
-  .hawaii{ position:absolute; top: 750px; left: 140px; width:22px; z-index: 2; } 
+      .arizona{ position:absolute; top: 750px; left: 550px; width:22px; z-index: 2; }  
 
-  .alaska{ position:absolute; top: 230px; left: 290px; width:22px; z-index: 2; }
+      .newMexico{ position:absolute; top: 750px; left: 630px; width:22px; z-index: 2; } 
 
-  .finanzasSaltilloCoahuila{ position:absolute; top: 870px; left: 685px; width:22px; z-index: 2; }
+      .oklahoma{ position:absolute; top: 730px; left: 755px; width:22px; z-index: 2; } 
 
-  .metepecToluca{ position:absolute; top: 1040px; left: 700px; width:22px; z-index: 2; }
+      .texas{ position:absolute; top: 810px; left: 730px; width:22px; z-index: 2; } 
 
-  .tolucaCentroToluca{ position:absolute; top: 1040px; left: 725px; width:22px; z-index: 2; }
+      .hawaii{ position:absolute; top: 750px; left: 140px; width:22px; z-index: 2; } 
 
-  .sanCristobalHuichotitlanToluca{ position:absolute; top: 1060px; left: 714px; width:22px; z-index: 2; }
+      .alaska{ position:absolute; top: 230px; left: 290px; width:22px; z-index: 2; }
 
-  .pedregalMexico{ position:absolute; top: 1020px; left: 675px; width:22px; z-index: 2; }
+      .finanzasSaltilloCoahuila{ position:absolute; top: 870px; left: 685px; width:22px; z-index: 2; }
 
-  .benitoJuarezMexico{ position:absolute; top: 1065px; left: 750px; width:22px; z-index: 2; }
+      .metepecToluca{ position:absolute; top: 1040px; left: 700px; width:22px; z-index: 2; }
 
-  .mercedMexico{ position:absolute; top: 1020px; left: 705px; width:22px; z-index: 2; }
+      .tolucaCentroToluca{ position:absolute; top: 1040px; left: 725px; width:22px; z-index: 2; }
 
-  .apodacaNuevoLeon{ position:absolute; top: 900px; left: 705px; width:22px; z-index: 2; }
+      .sanCristobalHuichotitlanToluca{ position:absolute; top: 1060px; left: 714px; width:22px; z-index: 2; }
 
-  .mexicoElectricity{ position:absolute; top: 940px; left: 680px; width:22px; z-index: 2; 
+      .pedregalMexico{ position:absolute; top: 1020px; left: 675px; width:22px; z-index: 2; }
 
-</style>
+      .benitoJuarezMexico{ position:absolute; top: 1065px; left: 750px; width:22px; z-index: 2; }
+
+      .mercedMexico{ position:absolute; top: 1020px; left: 705px; width:22px; z-index: 2; }
+
+      .apodacaNuevoLeon{ position:absolute; top: 900px; left: 705px; width:22px; z-index: 2; }
+
+      .mexicoElectricity{ position:absolute; top: 940px; left: 680px; width:22px; z-index: 2; 
+
+    </style>
 
   <body>
     <nav>
@@ -168,75 +178,79 @@
         <li><a href = "tutorial.html"> Tutorial </a></li>
    
   </body>
+  </head>
 
-</head>
-
-<div class="myDiv" style="text-align: center;">
-	&nbsp;
-	<h1 style="font-family:verdana"> Save Our Earth </h1>
-	<p><strong>Coded By: Claire Shen<stron></p>
-        <a href="https://ibb.co/YtqbFKw">
-          <img src="https://i.ibb.co/wKxYFbj/logo-1.png" style= "width:200 px;height:200px;" alt = "logo"></a>
-      &ensp; 
+  <div class="myDiv" style="text-align: center;">
+	  &nbsp;
+	  <h1 style="font-family:verdana"> Save Our Earth </h1>
+	  <p><strong>Coded By: Claire Shen<stron></p>
+    <a href="https://ibb.co/YtqbFKw">
+      <img src="https://i.ibb.co/wKxYFbj/logo-1.png" style= "width:200 px;height:200px;" alt = "logo"></a>
+    &ensp; 
   </div>  
  
-<div class = "myDiv2">
-  &ensp; 
-  <h2 style="text-align: center" "font-family:cambria"  >What is the Purpose Of This Website?</h2>
-  <h5 / style = "font-family:calibri">The purpose of this website is to give users an insight on the harmful effects of pollution and provide real-time data of air quality index and electricity usage across North America. Users will also be able to compare their electriicty usage to the average in their area.</h5>
-  <h2 style="text-align: center" "font-family:cambria"  >What is Pollution?</h2>
+  <div class = "myDiv2">
+    &ensp; 
+    <h2 style="text-align: center" "font-family:cambria"  >What is the Purpose Of This Website?</h2>
+    <h4 / style = "font-family:calibri">The purpose of this website is to give users an insight on the harmful effects of pollution and provide real-time data of air quality index and electricity usage across North America. Users will also be able to compare their electriicty usage to the average in their area.</h4>
+    <h2 style="text-align: center" "font-family:cambria"  >What is Pollution?</h2>
 
 
-  <div class="row">
-    <div class="column">
-      <img src="https://media.wired.com/photos/5d1d41b78087e800091611c3/master/pass/Science_Pollution_1148072074.jpg" alt="Trash" style="width:100%">
+    <div class="row">
+      <div class="column">
+        <img src="https://media.wired.com/photos/5d1d41b78087e800091611c3/master/pass/Science_Pollution_1148072074.jpg" alt="Trash" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://hhp-blog.s3.amazonaws.com/2020/07/GettyImages-1098018152.jpg" alt="Pollution" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://www.clevelandclinic.org/healthinfo/ShowImage.ashx?PIC=4486" alt="Coughing" style="width:100%">
+      </div>
     </div>
-    <div class="column">
-      <img src="https://hhp-blog.s3.amazonaws.com/2020/07/GettyImages-1098018152.jpg" alt="Pollution" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="https://www.clevelandclinic.org/healthinfo/ShowImage.ashx?PIC=4486" alt="Coughing" style="width:100%">
-    </div>
-  </div>
 
-  <div>
-
-    <h5 / style = "font-family:calibri"> - Pollution is the addition of any substance (in any state of matter) or any form of energy (head, sound, or radioactivity) to the environment at a rate faster than it can be dispersed, diluted, decomposed, recycled, or stored in some harmless form.  <br> - Pollution can be caused by natural events such as volcano eruptions; however nowadays in society the work “pollution” mostly refers to an anthropogenic source (created by human activity)</h5>
+    <h4 / style = "font-family:calibri"> - Pollution is the addition of any substance (in any state of matter) or any form of energy (head, sound, or radioactivity) to the environment at a rate faster than it can be dispersed, diluted, decomposed, recycled, or stored in some harmless form.  <br> - Pollution can be caused by natural events such as volcano eruptions; however nowadays in society the work “pollution” mostly refers to an anthropogenic source (created by human activity)</h4>
     <h2 style="text-align: center" "font-family:cambria" >The Harmful Effects of Pollution</h2>
-    <h5 / style = "font-family:calibri"> - Boosts average global temperature
+    <h4 / style = "font-family:calibri"> - Boosts average global temperature
     - Acidic rain which can lead to the deaths of many animals and poorly affects the surfaces of the environment.  <br>
     - Depletion of ozone; Hydrocarbons are destroying ozone molecules which will lead the the depletion of ozone layers.  <br>
     - Ozone is gas in the atmosphere that protects living organisms on earth from harmful ultraviolet rays from the sun.  <br>
     - Too much exposure to ultraviolet rays can cause a basic sunburn but can be very deadly. Too much can cause damage to tissue. <br> - Exposure to UV rays can also cause premature aging of the skin, causing wrinkly skin, liver spots, etc.  <br>
-    - Exposure to UV rays can also weaken the immune system making it harder for your body to fight off infections.</h5>
+    - Exposure to UV rays can also weaken the immune system making it harder for your body to fight off infections.</h4>
     <h2 style="text-align: center" "font-family:cambria" > What You Can Do to Help </h2>
-    <h5 / style = "font-family:calibri"> - Using electrical transportation over regular cars that burn gasoline <br> - Turn off appliances and lights when not in use <br> - Use energy efficient light bulbs, such as LED <br> - Limit the amount of driving you by carpooling, using public transportation, biking/walking shorter distances <br>- Avoid idling of cars and electronic devices <br> - Full loads of washing machines / dryers</h5>
+    <h4 / style = "font-family:calibri"> - Using electrical transportation over regular cars that burn gasoline <br> - Turn off appliances and lights when not in use <br> - Use energy efficient light bulbs, such as LED <br> - Limit the amount of driving you by carpooling, using public transportation, biking/walking shorter distances <br>- Avoid idling of cars and electronic devices <br> - Full loads of washing machines / dryers</h4>
     <h2 style="text-align: center" "font-family:cambria" > Air Quality (Air Pollution)</h2>
-    <h5 / style = "font-family:calibri"> - It is caused by particles and certain gases that are suspended in the air (aerosols). <br> - The particles originate from car and truck exhaust, factories, dust, pollen, mold spores, volcanoes and wildfires. <br> - Aerosols can impact the climate. <br> - Some aerosols reflect sunlight away from earth’s surface while others absorb it.</h5>
+    <h4 / style = "font-family:calibri"> - It is caused by particles and certain gases that are suspended in the air (aerosols). <br> - The particles originate from car and truck exhaust, factories, dust, pollen, mold spores, volcanoes and wildfires. <br> - Aerosols can impact the climate. <br> - Some aerosols reflect sunlight away from earth’s surface while others absorb it.</h4>
     <h2 style="text-align: center" "font-family:cambria" > How Does Air Pollution Affect Our Health? </h2>
-    <h5 / style = "font-family:calibri"> - Exposure to poor air quality in any given area promotes the risk of cardiovascular and respiratory diseases <br> - The government of Canada estimated that about 15,000 premature deaths every year are linked to air pollution<br> - Effects breathing and lung conditions: asthma, allergies, chronic obstructive pulmonary disease<br> - Effects heart conditions: heart attacks, heart failure, hypertension
+    <h4 / style = "font-family:calibri"> - Exposure to poor air quality in any given area promotes the risk of cardiovascular and respiratory diseases <br> - The government of Canada estimated that about 15,000 premature deaths every year are linked to air pollution<br> - Effects breathing and lung conditions: asthma, allergies, chronic obstructive pulmonary disease<br> - Effects heart conditions: heart attacks, heart failure, hypertension </h4>
     <h2 style="text-align: center" "font-family:cambria" > Who is Most at Risk? </h2>
-    <h5 / style = "font-family:calibri"> - Older adults / younger children<br> - People who have had or have existing heart conditions<br> - People have had had or have existing breathing or lung problems<br> - People who have diabetes </h5>
+    <h4 / style = "font-family:calibri"> - Older adults / younger children<br> - People who have had or have existing heart conditions<br> - People have had had or have existing breathing or lung problems<br> - People who have diabetes </h4>
     <h2 style="text-align: center" "font-family:cambria" > How is Air Pollution Monitored? </h2>
-    <h5 / style = "font-family:calibri"> - In the United States the Clean Air Act requires every state to establish a network of air monitoring stations for criteria pollutants, using OAQPS (Office of Air Quality Planning and Standards). <br> - Instruments on the ground and orbiting satellites collect information. Satellites are able to detect particle pollution including smoke particles, airborne dust and industrial pollution. <br> - World-wide air Quality Monitoring Data Coverage: As of August 2020, real-time Air Quality data is available in 132 countries (2000 major cities). </h5>
+    <h4 / style = "font-family:calibri"> - In the United States the Clean Air Act requires every state to establish a network of air monitoring stations for criteria pollutants, using OAQPS (Office of Air Quality Planning and Standards). <br> - Instruments on the ground and orbiting satellites collect information. Satellites are able to detect particle pollution including smoke particles, airborne dust and industrial pollution. <br> - World-wide air Quality Monitoring Data Coverage: As of August 2020, real-time Air Quality data is available in 132 countries (2000 major cities). </h4>
     &nbsp;
-    <h4 style="text-align: center"> The AQI (Air Quality Index) scale runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern.</h4> <br>
+    <h4 style="text-align: center"> The AQI (Air Quality Index) scale runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern.</h4> 
+
+     <div class = "myDiv2" style="text-align: center;">
+      <img style="text-align: center"src="https://wordpress.accuweather.com/wp-content/uploads/2017/07/aqi-table.gif?w=632" style= "width:350 px;height:290px;" alt = "air quality index"></a>
+      &ensp; 
+      </div>
+
     <h2 style="text-align: center" "font-family:cambria" > How is Electricity Usage Measured? </h2>
-    <h5 / style = "font-family:calibri"> - In the United States the Clean Air Act requires every state to establish a network of air monitoring stations for criteria pollutants, using OAQPS (Office of Air Quality Planning and Standards). <br> - Instruments on the ground and orbiting satellites collect information. Satellites are able to detect particle pollution including smoke particles, airborne dust and industrial pollution. <br> - World-wide air Quality Monitoring Data Coverage: As of August 2020, real-time Air Quality data is available in 132 countries (2000 major cities). </h5>
-    &nbsp;
+    <h4 / style = "font-family:calibri"> - On this website, the data provided is in kWh or a kilowatt-hour. It is 1,000 watts used for one hour. As an example, a 100-watt light bulb operating for ten hours would use one kilowatt-hour. <br> - The average monthly electricity usage of a household within a region is displayed on the interactive map below. <br> </h4>
+    &ensp;
   </div>
 
-  <div class = "myDiv2" style="text-align: center;">
-    <img style="text-align: center"src="https://wordpress.accuweather.com/wp-content/uploads/2017/07/aqi-table.gif?w=632" style= "width:350 px;height:290px;" alt = "air quality index"></a>
-    &ensp; 
+  <div class = "myDiv3" style="text-align: center;">
+    &ensp;
+    <h1> Interactive Map </h1>
+    
+    <h4> - This map provides real-time data of the air quality index of the three largest countries (by land) in North America. <br> - It also provides historical data from 2017-2019 so you can see how the air quality has changed in recent years. <br> - Additaionlly, it also shows the average household electricity usage per month. <br> - The data for air quality index is derived from one station within that region. (Disclaimer, the dots are not located directly on the stations) <br> - Unfortunately there was no data available for Yukon, New Brunswick, Prince Edwards Island and Nunavut of Canada. Additionally, the air quality index data for Mexico is not divided into it's states but shows 8 stations with the most data. The electricity usage is also a national average for Mexico. <br><br></h4>
+
+    <h3> To view the data of a region, hover your cursor over the dot.</h3>
+  
+    <a href="https://ibb.co/bvs1mk2"><img src="https://i.ibb.co/7pnvCqR/Legend.png" alt="Legend" border="0" width = "600px"></a>
   </div>
 
-  <div class="myDiv" style="text-align: center;">
-    <a href="https://ibb.co/bvs1mk2"><img src="https://i.ibb.co/7pnvCqR/Legend.png" alt="Legend" border="0"></a>
-  </div>
-
-
-  <div style= "position: relative; left: 0; top: 0;">
+  <div class = "myDiv4" style= "position: relative; left: 0; top: 0;">
 
     <a href="https://ibb.co/jwcBsYV"><img class= "map" src="https://i.ibb.co/n1HZty3/Empty-Map.png" alt="Empty-Map" style="text-align: center;"> </a>
 
@@ -374,7 +388,6 @@
 
     <img class="apodacaNuevoLeon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/768px-Ski_trail_rating_symbol-green_circle.svg.png" title= "Air Quality Index: &#013; Station Name: Apodaca, Nuevo Leon &#013; Today: &#013; 2019: 12 &#013; 2018: 14 &#013; 2017: 22">
 
-    <img class="mexicoElectricity" src="https://www.publicdomainpictures.net/pictures/310000/nahled/pink-circle.png" title= "National Monthly Electricity Usage per Household: &#013; 2028 kWh" >
-  
+    <img class="mexicoElectricity" src="https://www.publicdomainpictures.net/pictures/310000/nahled/pink-circle.png" title= "National Monthly Electricity Usage per Household: &#013; 2028 kWh" 
   </div>
 </html>
